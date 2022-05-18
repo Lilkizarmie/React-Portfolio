@@ -1,12 +1,13 @@
-.app__navbar{
+.app__navbar {
   width: 100%;
-  
-  display:flex;
+
+  display: flex;
   justify-content: space-between;
   align-items: center;
 
   padding: 1rem 2rem;
   background: rgba(255, 255, 255, 0.25);
+  // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -14,12 +15,12 @@
   z-index: 2;
 }
 
-.app__navbar-logo{
+.app__navbar-logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 
-  img{
+  img {
     width: 90px;
     height: 20px;
 
@@ -30,7 +31,7 @@
   }
 }
 
-.app__navbar-links{
+.app__navbar-links {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -63,11 +64,11 @@
 
       transition: all 0.3s ease-in-out;
 
-      &:hover{
+      &:hover {
         color: var(--secondary-color);
       }
     }
-    
+
     &:hover {
       div {
         background: var(--secondary-color);
@@ -87,9 +88,10 @@
   position: relative;
 
   display: flex;
-  justify-content: centre;
-  align-items: centre;
-  background: var(--secondary-color);
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+
 
   svg {
     width: 70%;
@@ -100,7 +102,7 @@
   div {
     position: fixed;
     top: 0;
-    bottom:0;
+    bottom: 0;
     right: 0;
     z-index: 5;
 
@@ -108,24 +110,25 @@
 
     width: 80%;
     height: 100vh;
-
+    
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-
+    
     background: url('../../assets/bgWhite.png');
     background-color: var(--white-color);
     background-size: cover;
     background-repeat: repeat;
 
-    box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+    /* top box shadow */
+    box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
 
     svg {
-      width: 35%;
-      height: 35%;
+      width: 35px;
+      height: 35px;
       color: var(--secondary-color);
-      margin: 0.5rem 1 rem;
+      margin: 0.5rem 1rem;
     }
 
     ul {
@@ -159,13 +162,12 @@
       }
     }
 
-    @media screen and (min-width: 900px;) {
+    @media screen and (min-width: 900px) {
       display: none;
     }
   }
-  
-  @media screen (min-width:900px) {
+
+  @media screen and (min-width: 900px) {
     display: none;
   }
-    
 }
